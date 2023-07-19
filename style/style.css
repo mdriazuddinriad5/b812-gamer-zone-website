@@ -324,8 +324,8 @@
 
 .play-games-container {
     margin-top: 200px;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
     gap: 150px;
     align-items: center;
 
@@ -337,16 +337,21 @@
 }
 
 .play-games-img #img1 {
-    width: 34vw;
-    height: 70vh;
+    /* width: 34vw;
+    height: 70vh; */
+    width: 100%;
 }
 
 .play-games-img #img2 {
-    width: 17vw;
-    height: 30vh;
+    /* width: 17vw;
+    height: 30vh; */
     position: relative;
-    left: 25vw;
-    bottom: 20vh;
+    left: 200px;
+    bottom: 100px;
+    width: 60%
+        /* width: 50%; */
+        /* left: 25vw;
+    bottom: 20vh; */
 }
 
 .play-games-text {
@@ -405,6 +410,10 @@
     margin-bottom: 25px;
 }
 
+
+.game-container2{
+    display: none;
+}
 
 
 
@@ -473,3 +482,369 @@ footer .logo {
     margin-top: 28px;
     padding-bottom: 100px;
 }
+
+
+
+
+/* Responsive for mobile devices */
+
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .nav-options,
+    .gamer-container,
+    .card-container {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        gap: 30px;
+        text-align: center;
+    }
+
+    .nav-container .logo {
+        margin-left: 10%;
+    }
+
+    .nav-options {
+        gap: 0;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background: url('');
+    }
+
+    .banner-img img {
+        left: 20%;
+        width: 60%;
+    }
+
+    .banner-text {
+        padding: 0;
+        background: url('../images/Group 14.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100%;
+
+    }
+
+    .gamer-img img {
+        width: 90%;
+        padding-left: 0;
+
+    }
+
+    .gamer-text {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 100px;
+        margin-left: 15%;
+    }
+
+    .online-games {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+
+    .play-games-container {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 30px;
+
+    }
+
+    .play-games-img {
+        /* border: 1px solid tomato; */
+        margin-left: 50px;
+    }
+
+    .play-games-img #img1 {
+        /* width: 34vw;
+    height: 70vh; */
+        width: 90%;
+
+    }
+
+    .play-games-img #img2 {
+        position: relative;
+        left: 160px;
+        bottom: 130px;
+        width: 50%
+    }
+
+    .play-games-text {
+        margin-right: 0;
+        text-align: center;
+        /* border: 1px solid yellow; */
+        padding-bottom: 0;
+    }
+    
+    .game-container{
+        display: none;
+    }
+
+
+    .class1{
+        display: flex;
+    }
+    .game-container2{
+        /* display: flex; */
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    
+.footer-container {
+    margin-top: 30px;
+    background: #0B0223;
+    text-align: center;
+}
+
+
+footer .logo h2 {
+    color: #FFF;
+}
+
+footer .logo {
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.sections ul {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.sections ul li {
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-media ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.settings ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.settings li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.small {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 28px;
+    padding-bottom: 40px;
+}
+
+
+     
+}
+
+
+
+/* Responsive for medium devices */
+
+
+@media screen and (min-width:576) and (max-width: 960px){
+
+
+    .nav-container,
+    .nav-options,
+    .gamer-container,
+    .card-container {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        gap: 30px;
+        text-align: center;
+    }
+
+    .nav-container .logo {
+        margin-left: 10%;
+    }
+
+    .nav-options {
+        gap: 0;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background: url('');
+    }
+
+    .banner-img img {
+        left: 20%;
+        width: 60%;
+    }
+
+    .banner-text {
+        padding: 0;
+        background: url('../images/Group 14.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100%;
+
+    }
+
+    .gamer-img img {
+        width: 90%;
+        padding-left: 0;
+
+    }
+
+    .gamer-text {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 100px;
+        margin-left: 15%;
+    }
+
+    .online-games {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+
+    .play-games-container {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 30px;
+
+    }
+
+    .play-games-img {
+        /* border: 1px solid tomato; */
+        margin-left: 50px;
+    }
+
+    .play-games-img #img1 {
+        /* width: 34vw;
+    height: 70vh; */
+        width: 90%;
+
+    }
+
+    .play-games-img #img2 {
+        position: relative;
+        left: 160px;
+        bottom: 130px;
+        width: 50%
+    }
+
+    .play-games-text {
+        margin-right: 0;
+        text-align: center;
+        /* border: 1px solid yellow; */
+        padding-bottom: 0;
+    }
+    
+    .game-container{
+        display: none;
+    }
+
+
+    .class1{
+        display: flex;
+    }
+    .game-container2{
+        /* display: flex; */
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    
+.footer-container {
+    margin-top: 30px;
+    background: #0B0223;
+    text-align: center;
+}
+
+
+footer .logo h2 {
+    color: #FFF;
+}
+
+footer .logo {
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.sections ul {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.sections ul li {
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-media ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.settings ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+   
+}
+
