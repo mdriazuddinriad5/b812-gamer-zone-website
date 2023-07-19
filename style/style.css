@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared styles  */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+.caption {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 48px;
+    background: #FF42A5;
+    padding: 21px 40px;
+    border: none;
 }
 
 /* header styles  */
@@ -26,6 +45,16 @@
     width: 86px;
 }
 
+.nav-logo h2 {
+    color: #0B0223;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.nav-logo h2 span {
+    color: #FF42A5;
+}
+
 .nav-options {
     display: flex;
     gap: 32px;
@@ -34,6 +63,9 @@
 
 .nav-options li {
     list-style: none;
+    color: #3C354F;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 .nav-options-contact ul {
@@ -53,3 +85,66 @@
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
+
+
+/* main styles  */
+
+/* banner styles  */
+
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    background: url('../images/Group 14.png');
+    background-repeat: no-repeat;
+    background-position: left;
+
+
+}
+
+.banner-text {
+    padding: 140px 250px;
+
+}
+
+.banner-text h2 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.banner-text h1 {
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-text p{
+    margin-bottom: 1rem;
+}
+.btn-style {
+    display: flex;
+    justify-content: left;
+    gap: 1.5rem;
+}
+
+.btn-secondary {
+    background: #4EC5F7;
+}
+
+
+.banner-img img {
+    width: 100%;
+}
+
+
+/* we are gamer styles  */
+
+
